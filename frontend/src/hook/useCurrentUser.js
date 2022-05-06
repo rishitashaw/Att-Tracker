@@ -1,39 +1,36 @@
-import { useState, useEffect } from 'react'
-import { PassageUser } from '@passageidentity/passage-auth/passage-user'
+import { useState, useEffect } from "react";
+import { PassageUser } from "@passageidentity/passage-auth/passage-user";
 
 export function useCurrentUser() {
     const [result, setResult] = useState({
         isLoading: true,
         isAuthorized: false,
-        username: ""
-    })
+        username: "",
+    });
 
     useEffect(() => {
-        var cancelRequest = false;
-        new PassageUser.userInfo().then((userInfo) => {
+        let cancelRequest = false;
+        new PassageUser().userInfo().then((userInfo) => {
             if (cancelRequest) return;
 
             if (userInfo === undefined) {
                 setResult({
                     isLoading: false,
                     isAuthorized: false,
-                    username: ""
-                })
+                    username: "",
+                });
                 return;
             }
-
             setResult({
                 isLoading: false,
-                isAuthorized: false,
-                username: userInfo.email ? userInfo.email : userInfo.phone
-            })
-
-
-        })
+                isAuthorized: true,
+                username: userInfo.email ? userInfo.email : userInfo.phone,
+            });
+        });
         return () => {
             cancelRequest = true;
-        }
-    }, [])
+        };
+    }, []);
 
-    return result
+    return result;
 }
