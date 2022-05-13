@@ -6,12 +6,16 @@
     "@passageidentity/passage-auth": "^0.1.0-beta.28",
     "@passageidentity/passage-elements": "^0.1.0-beta.39",
     "antd": "^4.20.4",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3",
     "cra-template": "1.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-qr-code": "^2.0.7",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "slick": "^1.12.2",
+    "themify-icons": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
