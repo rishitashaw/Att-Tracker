@@ -1,4 +1,4 @@
-import "@passageidentity/passage-auth"
+import '@passageidentity/passage-auth';
 export default function Login() {
     return (
         <>

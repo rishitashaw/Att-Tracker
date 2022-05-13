@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@passageidentity/passage-auth": "^0.1.0-beta.28",
+    "@passageidentity/passage-elements": "^0.1.0-beta.39",
+    "antd": "^4.20.4",
     "cra-template": "1.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-qr-code": "^2.0.7",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1"
   },

@@ -4,13 +4,18 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Home from './components/home';
+import Qrcode from './components/qrcode';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route element={<Login />} path="/" exact />
+        <Route element={<Home />} path="/" exact />
+        <Route element={<Login />} path="/login" exact />
         <Route element={<Profile />} path="/profile" exact />
+        <Route element={<Qrcode />} path="/code" exact />
+
       </Routes>
 
     </div>

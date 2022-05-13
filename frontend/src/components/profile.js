@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCurrentUser } from '../hook/useCurrentUser';
+import '@passageidentity/passage-elements/passage-profile';
 
 export default function Profile() {
     const { isLoading, isAuthorized, username } = useCurrentUser();
@@ -9,7 +10,8 @@ export default function Profile() {
 
             {isAuthorized ?
                 <>
-                    Logged in as {username}
+
+                    <passage-profile app-id="rNZekLj0Q12fg8QrhCeea4uy"></passage-profile>
                 </> :
                 <>
                     You are not logged in
