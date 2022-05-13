@@ -8,7 +8,7 @@ export default function Profile() {
         <>
 
             <>
-                <section class="fixed-top navigation">
+                <section class="fixed-top navigation nav-bg">
                     <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
