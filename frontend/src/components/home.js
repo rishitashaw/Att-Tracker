@@ -5,7 +5,7 @@ export default function Home() {
             <section className="fixed-top navigation nav-bg">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light ">
-                        <a className="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                        <a className="navbar-brand" href="/"><img src="images/logo.png" alt="logo" /></a>
                         <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -51,8 +51,8 @@ export default function Home() {
                                 Class and Attendance</h1>
                             <p className="mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br />
                                 dolore eu fugiat nulla pariatur.</p>
-                            <a href="#" className="btn btn-secondary btn-lg">
-                                <Link to="/login">Login Now</Link></a>
+                            <p className="btn btn-secondary btn-lg">
+                                <Link to="/login">Login Now</Link></p>
                             <img className="img-fluid w-100 banner-image" src="images/hero-area/banner-img.png" alt="banner-img" />
                         </div>
                     </div>
@@ -192,8 +192,8 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="col-10 mx-auto">
-                        <div className="team-slider d-flex justify-content-center">
-                            <div className="team-member card">
+                        <div className="team-slider row justify-content-center">
+                            <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
                                         <img className="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member" />
@@ -206,7 +206,7 @@ export default function Home() {
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                                     the blind texts. S eparated they</p>
                             </div>
-                            <div className="team-member card">
+                            <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
                                         <img className="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member" />
@@ -219,7 +219,7 @@ export default function Home() {
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
                                     the blind texts. S eparated they</p>
                             </div>
-                            <div className="team-member card ">
+                            <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
                                         <img className="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member" />
@@ -245,7 +245,7 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
-                            <h2 className="section-title">Our Pricing</h2>
+                            <h2 className="section-title">Our Features</h2>
                             <p className="mb-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br />
                                 fugiat nulla pariatur. Excepteur sint occaecat </p>
                         </div>
@@ -253,35 +253,35 @@ export default function Home() {
                             <div className="row justify-content-center">
                                 <div className="col-md-6 col-lg-4 mb-5 mb-lg-0">
                                     <div className="rounded text-center pricing-table table-1">
-                                        <h3>Free</h3>
-                                        <h1><span>$</span>00</h1>
+                                        <h3>Seamless</h3>
+                                        <h1><span>No.</span>1</h1>
                                         <p>Far far away, behind the
                                             wordmountains, far from the
                                             countries Vokalia and
                                         </p>
-                                        <a href="#" className="btn pricing-btn px-2">Get Started</a>
+                                        <p className="btn pricing-btn px-2">Get Started</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 mb-5 mb-lg-0">
                                     <div className="rounded text-center pricing-table table-2">
-                                        <h3>Standard</h3>
-                                        <h1><span>$</span>75</h1>
+                                        <h3>Easy to Use</h3>
+                                        <h1><span>No.</span>2</h1>
                                         <p>Far far away, behind the
                                             wordmountains, far from the
                                             countries Vokalia and
                                         </p>
-                                        <a href="#" className="btn pricing-btn px-2">Buy Now</a>
+                                        <p className="btn pricing-btn px-2">Login Now</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 mb-5 mb-lg-0">
                                     <div className="rounded text-center pricing-table table-3">
-                                        <h3>Premium</h3>
-                                        <h1><span>$</span>99</h1>
+                                        <h3>Highly Secure</h3>
+                                        <h1><span>No.</span>3</h1>
                                         <p>Far far away, behind the
                                             wordmountains, far from the
                                             countries Vokalia and
                                         </p>
-                                        <a href="#" className="btn pricing-btn px-2">Buy Now</a>
+                                        <p className="btn pricing-btn px-2">Login Now</p>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,8 @@ export default function Home() {
             </section>
 
 
-
+            <br />
+            <br />
             <section className="newsletter">
                 <div className="container">
                     <div className="row">
@@ -319,13 +320,13 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-                            <a href="index.html">
+                            <a href="/">
                                 <img className="img-fluid" src="images/logo.png" alt="logo" />
                             </a>
                         </div>
                         <nav className="col-lg-8 align-self-center mb-5">
                             <ul className="list-inline text-lg-right text-center footer-menu">
-                                <li className="list-inline-item active"><a href="index.html">Home</a></li>
+                                <li className="list-inline-item active"><a href="/">Home</a></li>
                                 <li className="list-inline-item"><a className="page-scroll" href="#feature">Feature</a></li>
                                 <li className="list-inline-item"><a href="about.html">About</a></li>
                                 <li className="list-inline-item"><a className="page-scroll" href="#team">Team</a></li>
@@ -336,16 +337,16 @@ export default function Home() {
                         <nav className="col-12">
                             <ul className="list-inline text-lg-right text-center social-icon">
                                 <li className="list-inline-item">
-                                    <a className="facebook" href="#"><i className="ti-facebook"></i></a>
+                                    <p className="facebook" ><i className="ti-facebook"></i></p>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="twitter" href="#"><i className="ti-twitter-alt"></i></a>
+                                    <p className="twitter" ><i className="ti-twitter-alt"></i></p>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="linkedin" href="#"><i className="ti-linkedin"></i></a>
+                                    <p className="linkedin" ><i className="ti-linkedin"></i></p>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a className="black" href="#"><i className="ti-github"></i></a>
+                                    <p className="black" ><i className="ti-github"></i></p>
                                 </li>
                             </ul>
                         </nav>

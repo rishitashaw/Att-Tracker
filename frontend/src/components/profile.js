@@ -8,60 +8,60 @@ export default function Profile() {
         <>
 
             <>
-                <section class="fixed-top navigation nav-bg">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
-                            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+                <section className="fixed-top navigation nav-bg">
+                    <div className="container">
+                        <nav className="navbar navbar-expand-lg navbar-light">
+                            <a className="navbar-brand" href="/"><img src="images/logo.png" alt="logo" /></a>
+                            <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div className="collapse navbar-collapse text-center" id="navbar">
-                                <ul className="navbar-nav ml-auto">
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/">Home</a>
+                            <div classNameName="collapse navbar-collapse text-center" id="navbar">
+                                <ul classNameName="navbar-nav ml-auto">
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link" href="/">Home</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link page-scroll" href="/#feature">Feature</a>
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link page-scroll" href="/#feature">Feature</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/">About</a>
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link" href="/">About</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="/">Service</a>
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link" href="/">Service</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link page-scroll" href="/#team">Team</a>
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link page-scroll" href="/#team">Team</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link page-scroll" href="/#pricing">Pricing</a>
+                                    <li classNameName="nav-item">
+                                        <a classNameName="nav-link page-scroll" href="/#pricing">Pricing</a>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="">
-                                            <Link to="/code">QR Code</Link></a>
+                                    <li classNameName="nav-item">
+                                        <p classNameName="nav-link" >
+                                            <Link to="/code">QR Code</Link></p>
                                     </li>
                                 </ul>
-                                <a href="#" className="btn btn-primary ml-lg-3 primary-shadow">
+                                <p classNameName="btn btn-primary ml-lg-3 primary-shadow">
                                     <Link to="/login">Login</Link>
-                                </a>
+                                </p>
                             </div>
                         </nav>
                     </div>
                 </section>
 
-                <section class="section-lg service-bg-image position-relative" style={{ backgroundImage: "url(images/backgrounds/service-page.png)" }}>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h2 class="section-title">User Dashboard</h2>
-                                <p class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
+                <section className="section-lg service-bg-image position-relative" style={{ backgroundImage: "url(images/backgrounds/service-page.png)" }}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <h2 className="section-title">User Dashboard</h2>
+                                <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
 
                                 <form action="#">
-                                    <label class="form-label" for="name">Mark Attendance For:</label>
-                                    <input type="text" class="form-control mb-3" id="name" name="name"
+                                    <label className="form-label" for="name">Mark Attendance For:</label>
+                                    <input type="text" className="form-control mb-3" id="name" name="name"
                                         placeholder="Enter Subject Code" value="CS101" />
 
-                                    <button type="submit" value="submit" class="btn btn-secondary">SUBMIT</button>
+                                    <button type="submit" value="submit" className="btn btn-secondary">SUBMIT</button>
                                 </form>
                             </div>
                             {isLoading ? <div>Loading...</div> : null}
@@ -79,44 +79,44 @@ export default function Profile() {
 
                         </div>
                     </div>
-                    <img class="service-bg-1 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="" />
-                    <img class="service-bg-2 left-right-animation" src="images/background-shape/seo-half-cycle.png" alt="" />
-                    <img class="service-bg-3 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="" />
-                    <img class="service-bg-4 left-right-animation" src="images/background-shape/green-dot.png" alt="" />
-                    <img class="service-bg-5 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="" />
+                    <img className="service-bg-1 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="" />
+                    <img className="service-bg-2 left-right-animation" src="images/background-shape/seo-half-cycle.png" alt="" />
+                    <img className="service-bg-3 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="" />
+                    <img className="service-bg-4 left-right-animation" src="images/background-shape/green-dot.png" alt="" />
+                    <img className="service-bg-5 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="" />
                 </section>
 
-                <footer class="footer-section footer" style={{ backgroundImage: "url(images/backgrounds/footer-bg.png)" }}>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-                                <a href="index.html">
-                                    <img class="img-fluid" src="images/logo.png" alt="logo" />
+                <footer className="footer-section footer" style={{ backgroundImage: "url(images/backgrounds/footer-bg.png)" }}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+                                <a href="/">
+                                    <img className="img-fluid" src="images/logo.png" alt="logo" />
                                 </a>
                             </div>
-                            <nav class="col-lg-8 align-self-center mb-5">
-                                <ul class="list-inline text-lg-right text-center footer-menu">
-                                    <li class="list-inline-item active"><a href="index.html">Home</a></li>
-                                    <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
-                                    <li class="list-inline-item"><a href="about.html">About</a></li>
-                                    <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-                                    <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-                                    <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                            <nav className="col-lg-8 align-self-center mb-5">
+                                <ul className="list-inline text-lg-right text-center footer-menu">
+                                    <li className="list-inline-item active"><a href="/">Home</a></li>
+                                    <li className="list-inline-item"><a className="page-scroll" href="#feature">Feature</a></li>
+                                    <li className="list-inline-item"><a href="about.html">About</a></li>
+                                    <li className="list-inline-item"><a className="page-scroll" href="#team">Team</a></li>
+                                    <li className="list-inline-item"><a className="page-scroll" href="#pricing">Pricing</a></li>
+                                    <li className="list-inline-item"><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
-                            <nav class="col-12">
-                                <ul class="list-inline text-lg-right text-center social-icon">
-                                    <li class="list-inline-item">
-                                        <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+                            <nav classNameName="col-12">
+                                <ul classNameName="list-inline text-lg-right text-center social-icon">
+                                    <li classNameName="list-inline-item">
+                                        <p classNameName="facebook" ><i classNameName="ti-facebook"></i></p>
                                     </li>
-                                    <li class="list-inline-item">
-                                        <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+                                    <li classNameName="list-inline-item">
+                                        <p classNameName="twitter" ><i classNameName="ti-twitter-alt"></i></p>
                                     </li>
-                                    <li class="list-inline-item">
-                                        <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+                                    <li classNameName="list-inline-item">
+                                        <p classNameName="linkedin" ><i classNameName="ti-linkedin"></i></p>
                                     </li>
-                                    <li class="list-inline-item">
-                                        <a class="black" href="#"><i class="ti-github"></i></a>
+                                    <li classNameName="list-inline-item">
+                                        <p classNameName="black" ><i classNameName="ti-github"></i></p>
                                     </li>
                                 </ul>
                             </nav>

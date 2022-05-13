@@ -6,7 +6,7 @@ export default function Login() {
             <section class="fixed-top navigation nav-bg">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                        <a class="navbar-brand" href="/"><img src="images/logo.png" alt="logo" /></a>
                         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,13 @@ export default function Login() {
                                     <a className="nav-link page-scroll" href="/#pricing">Pricing</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="">
-                                        <Link to="/code">QR Code</Link></a>
+                                    <p className="nav-link" >
+                                        <Link to="/code">QR Code</Link></p>
                                 </li>
                             </ul>
-                            <a href="#" className="btn btn-primary ml-lg-3 primary-shadow">
+                            <p className="btn btn-primary ml-lg-3 primary-shadow">
                                 <Link to="/login">Login</Link>
-                            </a>
+                            </p>
                         </div>
                     </nav>
                 </div>
@@ -66,13 +66,13 @@ export default function Login() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-                            <a href="index.html">
+                            <a href="/">
                                 <img class="img-fluid" src="images/logo.png" alt="logo" />
                             </a>
                         </div>
                         <nav class="col-lg-8 align-self-center mb-5">
                             <ul class="list-inline text-lg-right text-center footer-menu">
-                                <li class="list-inline-item active"><a href="index.html">Home</a></li>
+                                <li class="list-inline-item active"><a href="/">Home</a></li>
                                 <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
                                 <li class="list-inline-item"><a href="about.html">About</a></li>
                                 <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
@@ -80,19 +80,19 @@ export default function Login() {
                                 <li class="list-inline-item"><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
-                        <nav class="col-12">
-                            <ul class="list-inline text-lg-right text-center social-icon">
-                                <li class="list-inline-item">
-                                    <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+                        <nav className="col-12">
+                            <ul className="list-inline text-lg-right text-center social-icon">
+                                <li className="list-inline-item">
+                                    <p className="facebook" ><i className="ti-facebook"></i></p>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+                                <li className="list-inline-item">
+                                    <p className="twitter" ><i className="ti-twitter-alt"></i></p>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+                                <li className="list-inline-item">
+                                    <p className="linkedin" ><i className="ti-linkedin"></i></p>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a class="black" href="#"><i class="ti-github"></i></a>
+                                <li className="list-inline-item">
+                                    <p className="black" ><i className="ti-github"></i></p>
                                 </li>
                             </ul>
                         </nav>
