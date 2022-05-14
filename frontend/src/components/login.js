@@ -76,7 +76,7 @@ export default function Login() {
                                 <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
                                 <li class="list-inline-item"><a href="about.html">About</a></li>
                                 <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-                                <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
+                                <li class="list-inline-item"><a class="page-scroll" href="/profile">profile</a></li>
                                 <li class="list-inline-item"><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>

@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useCurrentUser } from '../hook/useCurrentUser';
-import '@passageidentity/passage-elements/passage-profile';
-import { Link } from 'react-router-dom'
-export default function Profile() {
+import { Link, useParams } from 'react-router-dom'
+import axios from 'axios';
+
+export default function Attendance() {
     const { isLoading, isAuthorized, username } = useCurrentUser();
+    const [error, setError] = useState()
+    const [success, setSuccess] = useState(false)
+    const { code, end_time } = useParams()
+    const [data, setData] = useState([])
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        console.log(end_time)
+        console.log(username)
+        axios.post("http://127.0.0.1:8000/api/markAttendance", { code: code, end_time: end_time, email: username })
+            .then(res => {
+                console.log(res.data);
+                setData(res.data);
+                setSuccess(true)
+            }).catch(error => {
+                setError(error.message);
+            });
+    }
+
     return (
         <>
-
             <>
                 <section className="fixed-top navigation nav-bg">
                     <div className="container">
@@ -34,7 +53,7 @@ export default function Profile() {
                                         <a className="nav-link page-scroll" href="/#team">Team</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link page-scroll" href="/profile">profile</a>
+                                        <a className="nav-link page-scroll" href="/profile">Profile</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="">
@@ -53,17 +72,36 @@ export default function Profile() {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">
-                                <h2 className="section-title">User Dashboard</h2>
+                                <h2 className="section-title">Attendance</h2>
                                 <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
-
-
                             </div>
                             {isLoading ? <div>Loading...</div> : null}
 
                             {isAuthorized ?
                                 <>
+                                    {!success ? <>
 
-                                    <passage-profile app-id="rNZekLj0Q12fg8QrhCeea4uy"></passage-profile>
+                                        <form action="#" onSubmit={handleSubmit}>
+                                            <label className="form-label" for="name">Mark Attendance For:</label>
+                                            <input type="text" className="form-control mb-3" id="name" name="name"
+                                                placeholder="Enter Subject Code" value={code} />
+
+                                            <button type="submit" value="submit" className="btn btn-secondary">SUBMIT</button>
+                                        </form><br /><br />
+                                        {error ?
+                                            <div className="alert alert-danger" role="alert">
+                                                {error}
+                                            </div>
+                                            : null}
+                                    </> : <div className="text-center">
+                                        Attendance marked successfully<br /><br />
+                                        <strong>{data.code}</strong><br /><br />
+                                        <strong>{data.email}</strong>
+
+                                    </div>
+                                    }
+
+
                                 </> :
                                 <>
                                     You are not logged in

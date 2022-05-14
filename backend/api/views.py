@@ -96,7 +96,7 @@ class attendance(APIView):
         students_array = []
         for code_student in code_students:
             student = Student.objects.get(email=code_student.email)
-            print(student)
+            # print(student)
             students_array.append(
                 {
                     "name": str(student.name),

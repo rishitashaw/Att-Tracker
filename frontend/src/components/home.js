@@ -28,7 +28,7 @@ export default function Home() {
                                     <a className="nav-link page-scroll" href="/#team">Team</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link page-scroll" href="/#pricing">Pricing</a>
+                                    <a className="nav-link page-scroll" href="/profile">profile</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="">

@@ -1,15 +1,36 @@
 import React, { useState } from "react";
 import QRCode from "react-qr-code";
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 
 export default function Qrcode() {
-    let [code, setCode] = useState("")
+    const [code, setCode] = useState("")
     const [displayCode, setDisplayCode] = useState(false)
+    const [endtime, setEndtime] = useState("")
+    const [qrCode, setQrcode] = useState("")
+    const [error, setError] = useState()
+
+    const baseURL = "http://127.0.0.1:8000/api/"
+    const handleCode = (event) => {
+        setCode(event.target.value)
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setDisplayCode(true);
-        alert(`The name you entered was: ${ code }`)
+        var minutesToAdd = 10;
+        var currentDate = new Date();
+        var futureDate = new Date(currentDate.getTime() + minutesToAdd * 60000);
+        setEndtime(futureDate.toISOString())
+
+
+        axios.post(`${ baseURL }saveCode`, { code: code, end_time: endtime })
+            .then(res => {
+                setDisplayCode(true);
+                setQrcode(`http://localhost:3000/markAttendance/${ res.data.code }/${ res.data.end_time }`)
+                console.log(qrCode)
+            }).catch(error => {
+                setError(error.message);
+            });
     }
 
     return (
@@ -40,7 +61,7 @@ export default function Qrcode() {
                                     <a className="nav-link page-scroll" href="/#team">Team</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link page-scroll" href="/#pricing">Pricing</a>
+                                    <a className="nav-link page-scroll" href="/profile">profile</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="">
@@ -68,14 +89,20 @@ export default function Qrcode() {
                                     <form action="#" onSubmit={handleSubmit}>
                                         <input type="text" className="form-control mb-3" id="name" name="name"
                                             value={code}
-                                            onChange={(e) => setCode(e.target.value)} placeholder="Enter Subject Code" />
+
+                                            onChange={handleCode} placeholder="Enter Subject Code" />
 
                                         <button type="submit" value="submit" className="btn btn-secondary">SUBMIT</button>
                                     </form>
 
                                 </div>
                                 <div className="col-lg-5">
-                                    {displayCode ? <QRCode value={code} size={300} /> : null}
+                                    {displayCode ? <>
+
+                                        <div className="alert alert-success">
+                                            <QRCode value={qrCode} size={300} />
+                                        </div>
+                                    </> : null}
                                 </div>
                             </div>
 
@@ -108,19 +135,19 @@ export default function Qrcode() {
                                 <li className="list-inline-item"><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
-                        <nav classNameName="col-12">
-                            <ul classNameName="list-inline text-lg-right text-center social-icon">
-                                <li classNameName="list-inline-item">
-                                    <p classNameName="facebook" ><i classNameName="ti-facebook"></i></p>
+                        <nav className="col-12">
+                            <ul className="list-inline text-lg-right text-center social-icon">
+                                <li className="list-inline-item">
+                                    <p className="facebook" ><i className="ti-facebook"></i></p>
                                 </li>
-                                <li classNameName="list-inline-item">
-                                    <p classNameName="twitter" ><i classNameName="ti-twitter-alt"></i></p>
+                                <li className="list-inline-item">
+                                    <p className="twitter" ><i className="ti-twitter-alt"></i></p>
                                 </li>
-                                <li classNameName="list-inline-item">
-                                    <p classNameName="linkedin" ><i classNameName="ti-linkedin"></i></p>
+                                <li className="list-inline-item">
+                                    <p className="linkedin" ><i className="ti-linkedin"></i></p>
                                 </li>
-                                <li classNameName="list-inline-item">
-                                    <p classNameName="black" ><i classNameName="ti-github"></i></p>
+                                <li className="list-inline-item">
+                                    <p className="black" ><i className="ti-github"></i></p>
                                 </li>
                             </ul>
                         </nav>

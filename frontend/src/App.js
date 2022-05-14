@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './components/home';
 import Qrcode from './components/qrcode';
+import Attendance from './components/attendance';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route element={<Login />} path="/login" exact />
         <Route element={<Profile />} path="/profile" exact />
         <Route element={<Qrcode />} path="/code" exact />
-
+        <Route element={<Attendance />} path="/markAttendance/:code/:end_time" />
       </Routes>
 
     </div>
