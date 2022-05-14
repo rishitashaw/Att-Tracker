@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import QRCode from "react-qr-code";
 import { Link } from 'react-router-dom'
 import axios from 'axios';
@@ -8,9 +8,10 @@ export default function Qrcode() {
     const [displayCode, setDisplayCode] = useState(false)
     const [endtime, setEndtime] = useState("")
     const [qrCode, setQrcode] = useState("")
-    const [error, setError] = useState()
+    const [error, setError] = useState("")
 
     const baseURL = "http://127.0.0.1:8000/api/"
+
     const handleCode = (event) => {
         setCode(event.target.value)
     }
@@ -26,6 +27,8 @@ export default function Qrcode() {
         axios.post(`${ baseURL }saveCode`, { code: code, end_time: endtime })
             .then(res => {
                 setDisplayCode(true);
+                setCode(res.data.code)
+                setEndtime(res.data.end_time)
                 setQrcode(`http://localhost:3000/markAttendance/${ res.data.code }/${ res.data.end_time }`)
                 console.log(qrCode)
             }).catch(error => {
