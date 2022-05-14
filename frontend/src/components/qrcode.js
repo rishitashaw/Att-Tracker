@@ -84,7 +84,7 @@ export default function Qrcode() {
                     <div className="row">
                         <div className="col-12 text-center">
                             <h2 className="section-title">QR Code Generator</h2>
-                            <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
+                            <p className="mb-100">QR stands for "Quick Response." While they may look simple, QR codes are capable of storing lots of data. But no matter how much they contain, when scanned, the QR code should allow the user to access information instantly – hence why it's called a Quick Response code.</p>
                         </div>
                         <>
                             <div className="row contact-bg p-5 rounded mb-5">

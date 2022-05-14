@@ -49,8 +49,7 @@ export default function Home() {
                         <div className="col-lg-12 text-center zindex-1">
                             <h1 className="mb-3">Take Control of your<br />
                                 Class and Attendance</h1>
-                            <p className="mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br />
-                                dolore eu fugiat nulla pariatur.</p>
+                            <p className="mb-4">Quick Response (QR) code as a future attendance management system, to track and record<br /> student attendance in lectures and exercises for all relevant courses</p>
                             <p className="btn btn-secondary btn-lg">
                                 <Link to="/login">Login Now</Link></p>
                             <img className="img-fluid w-100 banner-image" src="images/hero-area/banner-img.png" alt="banner-img" />
@@ -75,7 +74,7 @@ export default function Home() {
                     <div className="row">
                         <div className="col-lg-12 text-center ">
                             <h2 className="section-title">Awesome Features</h2>
-                            <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
+                            <p className="mb-100">Some of our best features are mentioned here</p>
                         </div>
                         <div className="col-md-6 mb-80">
                             <div className="d-flex feature-item">
@@ -84,8 +83,7 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <h4>Awesome Design</h4>
-                                    <p>Consectetur adipiscing elit donec tempus
-                                        pellentesque dui.</p>
+                                    <p>Simple UI design means that anyone can have access to very sophisticated applications</p>
                                 </div>
                             </div>
                         </div>
@@ -95,21 +93,21 @@ export default function Home() {
                                     <i className="ti-layout-cta-left feature-icon mr-4"></i>
                                 </div>
                                 <div>
-                                    <h4>Easy Customize</h4>
-                                    <p>Consectetur adipiscing elit donec tempus
-                                        pellentesque dui.</p>
+                                    <h4>High Security</h4>
+                                    <p>Highly secure because we're using biometric authentication</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-6 mb-80">
                             <div className="d-flex feature-item">
-                                <div>
+                                <div >
                                     <i className="ti-split-v-alt feature-icon mr-4"></i>
                                 </div>
-                                <div>
-                                    <h4>Bug free Code</h4>
-                                    <p>Consectetur adipiscing elit donec tempus
-                                        pellentesque dui.</p>
+                                <div >
+                                    <h4>Seamless Tracking</h4>
+                                    <p>
+                                        All attendance record against an user is easily viewable from the portal.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +118,7 @@ export default function Home() {
                                 </div>
                                 <div>
                                     <h4>Organized Layouts</h4>
-                                    <p>Consectetur adipiscing elit donec tempus
-                                        pellentesque dui.</p>
+                                    <p>Minimal layout and best features and super fast</p>
                                 </div>
                             </div>
                         </div>
@@ -141,11 +138,7 @@ export default function Home() {
                         </div>
                         <div className="col-md-5">
                             <h2 className="section-title">A Complete Range Of Attendance Tracking Services!</h2>
-                            <p>Far far away, behind the word mountains, far
-                                from the countries Vokalia and Consonantia.<br />
-                                There live the blind texts. Separated they
-                                live in Bookmarksgrove right at the coast of
-                                the Semantics, a large language ocean.
+                            <p>In higher education institutions, student participation in the classroom is directly related to their academic performance. However, the majority of student attendance registration is still conventionally done, which is tedious and time-consuming, especially for those courses that involve large numbers of students. Over the years, attendance management has been conducted manually at most of the universities. To overcome the manual attendance issues, we proposed and implemented a smart attendance system with the aim to encourage the potential use of the Quick Response (QR) code as a future attendance management system, to track and record student attendance in lectures and exercises for all relevant courses
                             </p>
                         </div>
                     </div>
@@ -187,8 +180,7 @@ export default function Home() {
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <h2 className="section-title">Our Team</h2>
-                            <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br />
-                                fugiat nulla pariatur. Excepteur sint occaecat </p>
+                            <p className="mb-100">Our hard working teammates</p>
                         </div>
                     </div>
                     <div className="col-10 mx-auto">
@@ -196,40 +188,38 @@ export default function Home() {
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member" width="100" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member" width="70" />
                                     </div>
                                     <div className="align-self-center">
-                                        <h4>Erik Ligas</h4>
+                                        <h4>Dikshita Majumdar</h4>
                                         <h6 className="text-color">Programmer</h6>
                                     </div>
                                 </div>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                                    the blind texts. S eparated they</p>
+                                <p>2022 APAC Generation Google Scholar, CSE Sophomore at NIT Durgapur, Junior Coordinator at RECursion</p>
                             </div>
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member" width="100" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member" width="70" />
                                     </div>
                                     <div className="align-self-center">
-                                        <h4>Erik Ligas</h4>
+                                        <h4>Rishita Shaw</h4>
                                         <h6 className="text-color">Programmer</h6>
                                     </div>
                                 </div>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                                    the blind texts. S eparated they</p>
+                                <p>Imagine Cup 2022 India Runner Up | Azure certified | NIT DGP'24 EE | Fullstack Web developer | Cloud Computing enthusiast | Golang learner </p>
                             </div>
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member" width="100" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member" width="70" />
                                     </div>
                                     <div className="align-self-center">
-                                        <h4>John Doe</h4>
-                                        <h6 className="text-color">web developer</h6>
+                                        <h4>Purvi Binani</h4>
+                                        <h6 className="text-color">Programmer</h6>
                                     </div>
                                 </div>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
+                                <p>Student at National Institute of Technology Durgapur | CSE 2024 | EDC, NIT Durgapur | Debating Society, NIT Durgapur</p>
                             </div>
                         </div>
                     </div>
@@ -246,8 +236,7 @@ export default function Home() {
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <h2 className="section-title">Our Features</h2>
-                            <p className="mb-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br />
-                                fugiat nulla pariatur. Excepteur sint occaecat </p>
+                            <p className="mb-50">Noteable Features</p>
                         </div>
                         <div className="col-lg-10 mx-auto">
                             <div className="row justify-content-center">
@@ -255,9 +244,8 @@ export default function Home() {
                                     <div className="rounded text-center pricing-table table-1">
                                         <h3>Seamless</h3>
                                         <h1><span>No.</span>1</h1>
-                                        <p>Far far away, behind the
-                                            wordmountains, far from the
-                                            countries Vokalia and
+                                        <p>
+                                            Its extremely seamless to use.
                                         </p>
                                         <p className="btn pricing-btn px-2">Get Started</p>
                                     </div>
@@ -266,9 +254,7 @@ export default function Home() {
                                     <div className="rounded text-center pricing-table table-2">
                                         <h3>Easy to Use</h3>
                                         <h1><span>No.</span>2</h1>
-                                        <p>Far far away, behind the
-                                            wordmountains, far from the
-                                            countries Vokalia and
+                                        <p>Anyone with little knowledge of technology can use it
                                         </p>
                                         <p className="btn pricing-btn px-2">Login Now</p>
                                     </div>
@@ -277,9 +263,7 @@ export default function Home() {
                                     <div className="rounded text-center pricing-table table-3">
                                         <h3>Highly Secure</h3>
                                         <h1><span>No.</span>3</h1>
-                                        <p>Far far away, behind the
-                                            wordmountains, far from the
-                                            countries Vokalia and
+                                        <p>Fingerprint authentication makes  it extremely secure
                                         </p>
                                         <p className="btn pricing-btn px-2">Login Now</p>
                                     </div>

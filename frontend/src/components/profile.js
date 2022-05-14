@@ -54,7 +54,7 @@ export default function Profile() {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h2 className="section-title">User Dashboard</h2>
-                                <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
+                                <p className="mb-100">launching point into user behavior analysis and threat prevention.</p>
 
 
                             </div>
@@ -65,10 +65,11 @@ export default function Profile() {
 
                                     <passage-profile app-id="rNZekLj0Q12fg8QrhCeea4uy"></passage-profile>
                                 </> :
-                                <>
-                                    You are not logged in
+                                <div className="text-center alert alert-danger ">
+                                    <strong>You are not logged in</strong><br />
+                                    <Link to="/login"> <p className="btn pricing-btn px-2">Login Now</p></Link>
 
-                                </>}
+                                </div>}
 
                         </div>
                     </div>
