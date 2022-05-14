@@ -15,40 +15,40 @@ export default function Qrcode() {
         <>
             <section className="fixed-top navigation nav-bg">
                 <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-light">
+                    <nav className="navbar navbar-expand-lg navbar-light ">
                         <a className="navbar-brand" href="/"><img src="images/logo.png" alt="logo" /></a>
                         <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div classNameName="collapse navbar-collapse text-center" id="navbar">
-                            <ul classNameName="navbar-nav ml-auto">
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link" href="/">Home</a>
+                        <div className="collapse navbar-collapse text-center" id="navbar">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">Home</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link page-scroll" href="/#feature">Feature</a>
+                                <li className="nav-item">
+                                    <a className="nav-link page-scroll" href="/#feature">Feature</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link" href="/">About</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">About</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link" href="/">Service</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/">Service</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link page-scroll" href="/#team">Team</a>
+                                <li className="nav-item">
+                                    <a className="nav-link page-scroll" href="/#team">Team</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <a classNameName="nav-link page-scroll" href="/#pricing">Pricing</a>
+                                <li className="nav-item">
+                                    <a className="nav-link page-scroll" href="/#pricing">Pricing</a>
                                 </li>
-                                <li classNameName="nav-item">
-                                    <p classNameName="nav-link" >
-                                        <Link to="/code">QR Code</Link></p>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="">
+                                        <Link to="/code">QR Code</Link></a>
                                 </li>
                             </ul>
-                            <p classNameName="btn btn-primary ml-lg-3 primary-shadow">
+                            <a href="#" className="btn btn-primary ml-lg-3 primary-shadow">
                                 <Link to="/login">Login</Link>
-                            </p>
+                            </a>
                         </div>
                     </nav>
                 </div>
