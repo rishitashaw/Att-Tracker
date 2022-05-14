@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Qrcode() {
     let [code, setCode] = useState("")
     const [displayCode, setDisplayCode] = useState(false)
+
     const handleSubmit = (event) => {
         event.preventDefault();
         setDisplayCode(true);
