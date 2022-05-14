@@ -69,7 +69,7 @@ export default function Home() {
                     <img className="img-fluid hero-bg-9 up-down-animation" src="images/background-shape/team-bg-triangle.png" alt="" />
                 </div>
             </section>
-
+            <br /><br />
             <section className="section feature mb-0" id="feature">
                 <div className="container">
                     <div className="row">
@@ -196,7 +196,7 @@ export default function Home() {
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-3.jpg" alt="team-member" width="100" />
                                     </div>
                                     <div className="align-self-center">
                                         <h4>Erik Ligas</h4>
@@ -209,7 +209,7 @@ export default function Home() {
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-1.jpg" alt="team-member" width="100" />
                                     </div>
                                     <div className="align-self-center">
                                         <h4>Erik Ligas</h4>
@@ -222,7 +222,7 @@ export default function Home() {
                             <div className="team-member card col-sm-3 mb-2">
                                 <div className="d-flex mb-4">
                                     <div className="mr-3">
-                                        <img className="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member" />
+                                        <img className="rounded-circle img-fluid" src="images/team/team-2.jpg" alt="team-member" width="100" />
                                     </div>
                                     <div className="align-self-center">
                                         <h4>John Doe</h4>
