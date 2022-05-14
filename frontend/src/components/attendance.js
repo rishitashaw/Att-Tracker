@@ -14,7 +14,7 @@ export default function Attendance() {
 
         console.log(end_time)
         console.log(username)
-        axios.post("http://127.0.0.1:8000/api/markAttendance", { code: code, end_time: end_time, email: username })
+        axios.post("https://att-tracker-h4iv1.herokuapp.com/api/markAttendance", { code: code, end_time: end_time, email: username })
             .then(res => {
                 console.log(res.data);
                 setData(res.data);
