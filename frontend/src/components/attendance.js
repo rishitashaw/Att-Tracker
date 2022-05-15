@@ -73,7 +73,7 @@ export default function Attendance() {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h2 className="section-title">Attendance</h2>
-                                <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p>
+                                {/* <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p> */}
                             </div>
                             {isLoading ? <div>Loading...</div> : null}
 
