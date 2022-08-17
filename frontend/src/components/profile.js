@@ -4,7 +4,7 @@ import '@passageidentity/passage-elements/passage-profile';
 import { Link } from 'react-router-dom'
 export default function Profile() {
     const { isLoading, isAuthorized, username } = useCurrentUser();
-
+    console.log(username)
     return (
         <>
             <>
