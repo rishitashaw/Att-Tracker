@@ -7,7 +7,6 @@ export default function Profile() {
 
     return (
         <>
-
             <>
                 <section className="fixed-top navigation nav-bg">
                     <div className="container">
