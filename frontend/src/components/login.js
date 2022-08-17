@@ -6,7 +6,9 @@ export default function Login() {
     const ref = useRef();
 
     const beforeAuth = (email) => {
-        console.log(email);
+        localStorage.setItem('username', email);
+        localStorage.setItem('isAuthorized', true);
+
         return true;
     }
 

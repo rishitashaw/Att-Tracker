@@ -1,12 +1,11 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import { useCurrentUser } from '../hook/useCurrentUser';
 import { Link } from 'react-router-dom'
 
 export default function Profile() {
-    const { isLoading, isAuthorized, username } = useCurrentUser();
-    console.log(username)
     let history = useHistory();
+    const username = localStorage.getItem('username');
+    const isAuthorized = localStorage.getItem('isAuthorized');
     return (
         <>
             <>
@@ -60,7 +59,6 @@ export default function Profile() {
 
 
                             </div>
-                            {isLoading ? <div>Loading...</div> : null}
 
                             {isAuthorized ?
                                 <>
