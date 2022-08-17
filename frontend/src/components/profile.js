@@ -63,7 +63,7 @@ export default function Profile() {
                             {isAuthorized ?
                                 <>
 
-                                    <passage-profile app-id="rNZekLj0Q12fg8QrhCeea4uy"></passage-profile>
+                                    <passage-profile app-id="6BR478RExE3p74TwahbPX1rb"></passage-profile>
                                 </> :
                                 <div className="text-center alert alert-danger ">
                                     <strong>You are not logged in</strong><br />

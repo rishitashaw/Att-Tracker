@@ -51,7 +51,7 @@ export default function Login() {
                             <h2 class="section-title">User Management</h2>
                             <p class="mb-100">Register if you are new or login</p>
                         </div>
-                        <passage-auth app-id="rNZekLj0Q12fg8QrhCeea4uy" ></passage-auth>
+                        <passage-auth app-id="6BR478RExE3p74TwahbPX1rb" ></passage-auth>
 
                     </div>
                 </div>
