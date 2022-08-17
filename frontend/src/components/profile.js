@@ -62,7 +62,7 @@ export default function Profile() {
 
                             {isAuthorized ?
                                 <>
-
+                                    {username}
                                     <passage-profile app-id="6BR478RExE3p74TwahbPX1rb"></passage-profile>
                                 </> :
                                 <div className="text-center alert alert-danger ">

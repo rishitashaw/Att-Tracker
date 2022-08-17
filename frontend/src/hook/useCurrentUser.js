@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
-import { PassageUser } from "@passageidentity/passage-auth/passage-user";
+import { PassageUser } from '@passageidentity/passage-auth/passage-user';
 
 export function useCurrentUser() {
     const [result, setResult] = useState({
         isLoading: true,
         isAuthorized: false,
-        username: "",
+        username: '',
     });
 
     useEffect(() => {
         let cancelRequest = false;
-        new PassageUser().userInfo().then((userInfo) => {
-            if (cancelRequest) return;
-
+        new PassageUser().userInfo().then(userInfo => {
+            if (cancelRequest) {
+                return;
+            }
             if (userInfo === undefined) {
                 setResult({
                     isLoading: false,
@@ -31,6 +32,5 @@ export function useCurrentUser() {
             cancelRequest = true;
         };
     }, []);
-
     return result;
 }
