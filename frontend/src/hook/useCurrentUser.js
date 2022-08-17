@@ -7,7 +7,7 @@ export function useCurrentUser() {
         isAuthorized: false,
         username: '',
     });
-
+    console.log(result);
     useEffect(() => {
         let cancelRequest = false;
         new PassageUser().userInfo().then(userInfo => {
