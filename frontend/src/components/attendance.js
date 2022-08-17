@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useCurrentUser } from '../hook/useCurrentUser';
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 
@@ -77,7 +76,6 @@ export default function Attendance() {
                                 <h2 className="section-title">Attendance</h2>
                                 {/* <p className="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br />Excepteur sint occaecat cupidatat non proident</p> */}
                             </div>
-                            {isLoading ? <div>Loading...</div> : null}
 
                             {isAuthorized ?
                                 <>
