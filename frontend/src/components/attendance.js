@@ -4,12 +4,13 @@ import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 
 export default function Attendance() {
-    const { isLoading, isAuthorized } = useCurrentUser();
     const [error, setError] = useState()
     const [success, setSuccess] = useState(false)
     const { code, end_time } = useParams()
     const [data, setData] = useState([])
     const username = localStorage.getItem('username')
+    const isAuthorized = localStorage.getItem('isAuthorized')
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
