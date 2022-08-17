@@ -1,9 +1,8 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom'
 
 export default function Profile() {
-    let history = useHistory();
+    // let history = useHistory();
     const username = localStorage.getItem('username');
     const isAuthorized = localStorage.getItem('isAuthorized');
     return (
@@ -63,7 +62,7 @@ export default function Profile() {
                             {isAuthorized ?
                                 <>
                                     {username}
-                                    {history.goBack()}
+                                    {/* {history.goBack()} */}
                                 </> :
                                 <div className="text-center alert alert-danger ">
                                     <strong>You are not logged in</strong><br />
